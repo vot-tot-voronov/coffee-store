@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="link">Click me!</div>
+    <script>
+        const link = document.querySelector('.link');
+        link.addEventListener('click', async event => {
+            const response = await fetch('http://localhost:3001');
+            const data = await response.json();
+            console.log(`My name is ${data.name} and I'm ${data.age}. My hometown is ${data.city}`);
+        });
+    </script>
+</body>
+</html>
