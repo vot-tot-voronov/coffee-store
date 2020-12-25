@@ -1,12 +1,19 @@
 const initialState = {
-    books: []
+    coffee: [
+        {
+            id: 1,
+            name: "Lalibella",
+            country: "Peru",
+            price: 320
+        }
+    ]
 };
 const reducer = (state = initialState, action) => {
 
     switch (action.type) {
         case 'COFFEE_LOADED':
             return {
-                books: action.payload
+                coffee: action.payload
             }
         default:
             return state;
