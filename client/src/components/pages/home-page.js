@@ -1,14 +1,14 @@
 import React from 'react';
 
 import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
-const HomePage = ({ coffee }) => {
+const HomePage = ({ coffee, coffeeLoaded }) => {
     console.log(coffee);
     return (
         <div>
-            <h1>Кофе: {coffee[0].name}</h1>
-            <p>Страна происхождения: {coffee[0].country}</p>
-            <p>Цена: {coffee[0].price}</p>
+            <h1>Hello coffee</h1>
+            <button onClick={coffeeLoaded}>Click me!</button>
         </div>
     );
 };
@@ -19,4 +19,4 @@ const mapDispatchToProps = (state) => {
     }
 }
 
-export default connect(mapDispatchToProps)(HomePage);
+export default connect(mapDispatchToProps, actions)(HomePage);

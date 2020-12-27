@@ -1,13 +1,4 @@
-const initialState = {
-    coffee: [
-        {
-            id: 1,
-            name: "Lalibella",
-            country: "Peru",
-            price: 320
-        }
-    ]
-};
+const initialState = {};
 const reducer = (state = initialState, action) => {
 
     switch (action.type) {

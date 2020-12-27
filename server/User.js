@@ -1,15 +1,17 @@
 class User {
-    constructor(name, age, city) {
+    constructor(id, name, country, price) {
+        this.id = id,
         this.name = name,
-        this.age = age,
-        this.city = city
+        this.country = country,
+        this.price = price
     }
 
     getUser() {
         return {
+            id: this.id,
             name: this.name,
-            age: this.age,
-            city: this.city
+            country: this.age,
+            price: this.city
         }
     }
     

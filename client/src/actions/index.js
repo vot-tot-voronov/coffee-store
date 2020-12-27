@@ -1,7 +1,7 @@
-const coffeeLoaded = (coffeeType) => {
+const coffeeLoaded = (coffee) => {
     return {
         type: 'COFFEE_LOADED',
-        payload: coffeeType
+        payload: fetch('http://localhost:3001/').then(res => console.log(res.json()))
     };
 };
 
