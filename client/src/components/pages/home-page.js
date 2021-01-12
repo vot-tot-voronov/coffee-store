@@ -1,22 +1,14 @@
 import React from 'react';
 
-import { connect } from 'react-redux';
-import * as actions from '../../actions';
+import CoffeeList from '../coffee-list';
 
-const HomePage = ({ coffee, coffeeLoaded }) => {
-    console.log(coffee);
+const HomePage = () => {
     return (
         <div>
-            <h1>Hello coffee</h1>
-            <button onClick={coffeeLoaded}>Click me!</button>
+            <CoffeeList />
         </div>
     );
 };
 
-const mapDispatchToProps = (state) => {
-    return {
-        coffee: state.coffee
-    }
-}
 
-export default connect(mapDispatchToProps, actions)(HomePage);
+export default HomePage;
