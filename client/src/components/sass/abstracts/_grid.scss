@@ -1,0 +1,22 @@
+.row {
+    max-width: 130rem;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: 70rem;
+    }
+
+    @include clearfix;
+
+    [class^="col-"] {
+        float: left;
+        &:not(:nth-child(3n)) {
+            margin-right: 5rem;
+        }
+        margin-top: 5rem;
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * 5rem) / 3);
+    }
+}

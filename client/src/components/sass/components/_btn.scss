@@ -1,0 +1,32 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #212121;
+        border-color: #c8c8c8;
+        border: 1px solid;
+        background-color: #fff;
+        padding: 1.2rem 2.2rem;
+        display: inline-block;
+        border-radius: 0.5rem;
+        transition: all 0.4s;
+        border: none;
+        cursor: pointer;
+        max-width: 22rem;
+        width: 100%;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: #000;
+    }
+    
+}

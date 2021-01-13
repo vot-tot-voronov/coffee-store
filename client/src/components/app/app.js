@@ -3,6 +3,11 @@ import { Route, Switch} from 'react-router-dom';
 
 import { HomePage } from '../pages';
 
+import './app.scss';
+
+
+
+
 const App = () => {
     return (
         <Switch>

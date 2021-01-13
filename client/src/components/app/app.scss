@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+@import '../sass/abstracts/_variables.scss';
+@import '../sass/abstracts/_mixins.scss';
+@import '../sass/abstracts/_grid.scss';
+@import '../sass/components/_btn.scss';

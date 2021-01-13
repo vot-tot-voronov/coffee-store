@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './coffee-list.css';
+import './coffee-list.scss';
 
 import CoffeeListItem from '../coffee-list-item';
 import withCoffeeService from '../hoc';
@@ -9,17 +9,15 @@ const CoffeeList = ( {coffeeService} ) => {
     const coffeeListData = coffeeService.getCoffee();
     console.log(coffeeListData);
     return (
-        <ul className="coffee-list">
+        <div className="row coffee-list">
             {
                 coffeeListData.map((coffee) => {
                     return (
-                        <li key={coffee.id}>
-                            <CoffeeListItem  coffee={coffee} />
-                        </li>
+                      <CoffeeListItem key={coffee.id} coffee={coffee} /> 
                     );
                 })
             }
-        </ul>
+        </div>
     )
 }
 
