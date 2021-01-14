@@ -10,13 +10,21 @@
 
     [class^="col-"] {
         float: left;
+        
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - 4rem) / 2);
+        
+    }
+
+    .col-1-of-3 {
         &:not(:nth-child(3n)) {
             margin-right: 5rem;
         }
         margin-top: 5rem;
-    }
-
-    .col-1-of-3 {
         width: calc((100% - 2 * 5rem) / 3);
     }
+
+    
 }

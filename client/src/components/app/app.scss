@@ -15,7 +15,9 @@ body {
     box-sizing: border-box;
 }
 
-@import '../sass/abstracts/_variables.scss';
+@import '../sass/abstracts/variables.scss';
 @import '../sass/abstracts/_mixins.scss';
 @import '../sass/abstracts/_grid.scss';
+
+
 @import '../sass/components/_btn.scss';
