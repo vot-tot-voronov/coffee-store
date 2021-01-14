@@ -16,8 +16,13 @@ body {
 }
 
 @import '../sass/abstracts/variables.scss';
-@import '../sass/abstracts/_mixins.scss';
-@import '../sass/abstracts/_grid.scss';
+@import '../sass/abstracts/mixins.scss';
+@import '../sass/abstracts/grid.scss';
+
+
+@import "../sass/fonts/scss/fontawesome.scss";
+@import "../sass/fonts/scss/brands.scss";
+@import "../sass/fonts/scss/solid.scss";
 
 
 @import '../sass/components/_btn.scss';
