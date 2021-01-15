@@ -2,15 +2,14 @@
     max-width: 130rem;
     margin: 0 auto;
 
-    &:not(:last-child) {
-        margin-bottom: 70rem;
-    }
+    // &:not(:last-child) {
+    //     margin-bottom: 70rem;
+    // }
 
     @include clearfix;
 
     [class^="col-"] {
         float: left;
-        
     }
 
     .col-1-of-2 {

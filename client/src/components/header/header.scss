@@ -1,3 +1,5 @@
+@import '../sass/abstracts/mixins.scss';
+
 .header {
     margin-top: 6rem;
     .title {
@@ -7,5 +9,85 @@
         text-align: right;
         font-size: 6rem;
     }
+
+    nav {
+        display: table;
+        margin: 0 auto;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .topmenu {
+            text-align: center;
+            @include clearfix;
+            & a {
+                display: block;
+                text-decoration: none;
+                outline: none;  
+                transition: .3s ease-in-out;
+            }
+            & > li {
+                float: left;
+                position: relative;
+
+                & > a {
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: #404040;
+                    padding: 1.5rem 3rem;
+                    border-radius: .5rem;
+                    &:hover {
+                        color: #fff;
+                        background-color: #141617;
+                    }
+                }
+            }
+            .submenu-link:after {
+                font-family: "Font Awesome 5 Free";
+                content: "\f107";
+                color: inherit;
+                margin-left: 1rem;
+            }
+            .submenu {
+                background-color: #141617;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                z-index: 5;
+                width: 19rem;
+                opacity: 0;
+                transform: scaleY(0);
+                transform-origin :0 0;
+                transition: .5s ease-in-out;
+                border-radius: .5rem;
+                
+                & a {
+                    color: white;
+                    text-align: left;
+                    padding: 2rem 1.5rem;
+                    font-size: 1.8rem;
+                    border-bottom: .1rem solid rgba(255,255,255,.1);
+                    border-radius: .5rem;
+
+                    &:hover {
+                        background-color: #b0b4b6;
+                        color: #141617;
+                    }
+                }
+                & li:last-child a {
+                    border-bottom: none;
+                }
+            }
+            & > li:hover .submenu {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+      }
 }
+
 
