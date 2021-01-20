@@ -94,6 +94,8 @@ export default class CoffeeService {
         }
     ];
     getCoffee () {
-        return this.data;
+        return new Promise((resolve, reject) => {
+            resolve(this.data);
+        });
     }
 }
