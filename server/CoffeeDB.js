@@ -1,6 +1,4 @@
-// work with server
-
-export default class CoffeeService {
+class CoffeeDB {
     data = [
         {
             id: 1,
@@ -93,12 +91,11 @@ export default class CoffeeService {
             price: '400'
         }
     ];
-    getCoffee () {
 
-        return fetch('http://localhost:3001').then(data => data.json());
-
-        // return new Promise((resolve, reject) => {
-        //     resolve(this.data);
-        // });
+    getCoffee() {
+        return this.data;
     }
+    
 }
+
+module.exports = CoffeeDB;

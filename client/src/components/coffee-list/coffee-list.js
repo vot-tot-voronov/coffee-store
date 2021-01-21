@@ -12,11 +12,10 @@ import CoffeeListItem from '../coffee-list-item';
 import withCoffeeService from '../hoc';
 
 const CoffeeList = ({ coffee, coffeeService, coffeeLoaded }) => {
-    console.log(coffee)
     useLayoutEffect(() => {
         coffeeService.getCoffee()
             .then(data => coffeeLoaded(data));
-    }, []);
+    }, [coffeeService, coffeeLoaded]);
     if (coffee === undefined) {
         return <Spinner />
     } else {
