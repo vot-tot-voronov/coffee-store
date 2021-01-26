@@ -13,7 +13,8 @@ class CoffeeDB {
             fry: 'средний',
             fabricator: 'MIKALE',
             weight: '350',
-            price: '400'
+            price: '400',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus tincidunt nisl sed hendrerit. Nam nec est at ipsum eleifend placerat id at orci. Etiam risus erat, pellentesque ut viverra et, commodo a nibh. Nulla quis lobortis lectus, vel rhoncus eros. Suspendisse consequat augue tellus, nec venenatis massa auctor sed. Vivamus vehicula nisi at lorem finibus ornare. Fusce tellus leo, tincidunt vitae ultricies sit amet, pharetra ac metus. Curabitur congue sodales faucibus. Mauris dapibus magna vitae porttitor condimentum.'
         },
         {
             id: 2,
@@ -28,7 +29,8 @@ class CoffeeDB {
             fry: 'средний',
             fabricator: 'MIKALE',
             weight: '350',
-            price: '400'
+            price: '400',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus tincidunt nisl sed hendrerit. Nam nec est at ipsum eleifend placerat id at orci. Etiam risus erat, pellentesque ut viverra et, commodo a nibh. Nulla quis lobortis lectus, vel rhoncus eros. Suspendisse consequat augue tellus, nec venenatis massa auctor sed. Vivamus vehicula nisi at lorem finibus ornare. Fusce tellus leo, tincidunt vitae ultricies sit amet, pharetra ac metus. Curabitur congue sodales faucibus. Mauris dapibus magna vitae porttitor condimentum.'
         },
         {
             id: 3,
@@ -43,7 +45,8 @@ class CoffeeDB {
             fry: 'средний',
             fabricator: 'MIKALE',
             weight: '350',
-            price: '400'
+            price: '400',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus tincidunt nisl sed hendrerit. Nam nec est at ipsum eleifend placerat id at orci. Etiam risus erat, pellentesque ut viverra et, commodo a nibh. Nulla quis lobortis lectus, vel rhoncus eros. Suspendisse consequat augue tellus, nec venenatis massa auctor sed. Vivamus vehicula nisi at lorem finibus ornare. Fusce tellus leo, tincidunt vitae ultricies sit amet, pharetra ac metus. Curabitur congue sodales faucibus. Mauris dapibus magna vitae porttitor condimentum.'
         },
         {
             id: 4,
@@ -58,7 +61,8 @@ class CoffeeDB {
             fry: 'средний',
             fabricator: 'MIKALE',
             weight: '350',
-            price: '400'
+            price: '400',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus tincidunt nisl sed hendrerit. Nam nec est at ipsum eleifend placerat id at orci. Etiam risus erat, pellentesque ut viverra et, commodo a nibh. Nulla quis lobortis lectus, vel rhoncus eros. Suspendisse consequat augue tellus, nec venenatis massa auctor sed. Vivamus vehicula nisi at lorem finibus ornare. Fusce tellus leo, tincidunt vitae ultricies sit amet, pharetra ac metus. Curabitur congue sodales faucibus. Mauris dapibus magna vitae porttitor condimentum.'
         },
         {
             id: 5,
@@ -73,7 +77,8 @@ class CoffeeDB {
             fry: 'средний',
             fabricator: 'MIKALE',
             weight: '350',
-            price: '400'
+            price: '400',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus tincidunt nisl sed hendrerit. Nam nec est at ipsum eleifend placerat id at orci. Etiam risus erat, pellentesque ut viverra et, commodo a nibh. Nulla quis lobortis lectus, vel rhoncus eros. Suspendisse consequat augue tellus, nec venenatis massa auctor sed. Vivamus vehicula nisi at lorem finibus ornare. Fusce tellus leo, tincidunt vitae ultricies sit amet, pharetra ac metus. Curabitur congue sodales faucibus. Mauris dapibus magna vitae porttitor condimentum.'
         },
         {
             id: 6,
@@ -88,7 +93,8 @@ class CoffeeDB {
             fry: 'средний',
             fabricator: 'MIKALE',
             weight: '350',
-            price: '400'
+            price: '400',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus tincidunt nisl sed hendrerit. Nam nec est at ipsum eleifend placerat id at orci. Etiam risus erat, pellentesque ut viverra et, commodo a nibh. Nulla quis lobortis lectus, vel rhoncus eros. Suspendisse consequat augue tellus, nec venenatis massa auctor sed. Vivamus vehicula nisi at lorem finibus ornare. Fusce tellus leo, tincidunt vitae ultricies sit amet, pharetra ac metus. Curabitur congue sodales faucibus. Mauris dapibus magna vitae porttitor condimentum.'
         }
     ];
 
