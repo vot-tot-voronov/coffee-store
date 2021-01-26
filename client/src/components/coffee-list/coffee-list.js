@@ -3,7 +3,7 @@ import React, { useLayoutEffect } from 'react';
 import Spinner from '../spinner';
 
 import { connect } from 'react-redux';
-import * as actions from '../../actions';
+import { coffeeLoaded } from '../../actions';
 
 
 import './coffee-list.scss';
@@ -11,11 +11,10 @@ import './coffee-list.scss';
 import CoffeeListItem from '../coffee-list-item';
 import withCoffeeService from '../hoc';
 
-const CoffeeList = ({ coffee, coffeeService, coffeeLoaded }) => {
+const CoffeeList = ({ coffee, fetchCoffee }) => {
     useLayoutEffect(() => {
-        coffeeService.getCoffee()
-            .then(data => coffeeLoaded(data));
-    }, [coffeeService, coffeeLoaded]);
+        fetchCoffee();
+    }, [fetchCoffee]);
     if (coffee === undefined) {
         return <Spinner />
     } else {
@@ -31,7 +30,6 @@ const CoffeeList = ({ coffee, coffeeService, coffeeLoaded }) => {
             </div>
         )
     }
-    
 }
 
 const mapStateToProps = ({ coffee }) => {
@@ -40,4 +38,15 @@ const mapStateToProps = ({ coffee }) => {
     }
 };
 
-export default withCoffeeService()(connect(mapStateToProps, actions)(CoffeeList));
+const mapDispatchToProps = (dispatch, ownProps) => {
+    const { coffeeService } = ownProps;
+
+    return {
+        fetchCoffee: () => {
+            coffeeService.getCoffee()
+            .then(data => dispatch(coffeeLoaded(data)));
+        }
+    }
+}
+
+export default withCoffeeService()(connect(mapStateToProps, mapDispatchToProps)(CoffeeList));
