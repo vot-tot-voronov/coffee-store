@@ -1,0 +1,14 @@
+.cart-item {
+    margin-bottom: 3rem;
+    &__img {
+        img {
+            width: 75%;
+            height: 16rem;
+        }
+    }
+    &__manage {
+        &--counter {
+            display: inline-block;
+        }
+    }
+}

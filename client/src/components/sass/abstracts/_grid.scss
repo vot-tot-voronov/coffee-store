@@ -25,6 +25,11 @@
         margin-top: 5rem;
         width: calc((100% - 2 * 5rem) / 3);
     }
+    .col-1-of-6 {
+        margin-top: 3rem;
+        width: calc((100% - 5 * 2rem) / 6);
+        text-align: center;
+    }
 
     
 }

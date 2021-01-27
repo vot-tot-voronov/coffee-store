@@ -3,7 +3,7 @@ import React from 'react';
 
 import './coffee-list-item.scss';
 
-const CoffeeListItem = ({ coffee }) => {
+const CoffeeListItem = ({ coffee, onAddedToCart }) => {
     const {img, series, name, cookMethod, weight, price} = coffee;
     return (
         <div className="col-1-of-3 coffee-list-item">
@@ -16,7 +16,7 @@ const CoffeeListItem = ({ coffee }) => {
                 <h1 className="description__coffee-name">{name}</h1>
                 <p className="description__weight">{weight} гр.</p>
                 <p className="description__price">{price} руб.</p>
-                <a href="/#" className="btn">Добавить в корзину</a>
+                <button className="btn" onClick={onAddedToCart}>Добавить в корзину</button>
             </div>
         </div>
     );

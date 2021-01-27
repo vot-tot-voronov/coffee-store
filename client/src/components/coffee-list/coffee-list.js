@@ -3,7 +3,7 @@ import React, { useLayoutEffect } from 'react';
 import Spinner from '../spinner';
 
 import { connect } from 'react-redux';
-import { coffeeLoaded } from '../../actions';
+import { coffeeLoaded, coffeeAddedToCart } from '../../actions';
 
 
 import './coffee-list.scss';
@@ -11,19 +11,23 @@ import './coffee-list.scss';
 import CoffeeListItem from '../coffee-list-item';
 import withCoffeeService from '../hoc';
 
-const CoffeeList = ({ coffee, fetchCoffee }) => {
+const CoffeeList = ({ coffee, fetchCoffee, onAddedToCart }) => {
     useLayoutEffect(() => {
         fetchCoffee();
     }, [fetchCoffee]);
     if (coffee === undefined) {
-        return <Spinner />
+        <Spinner />
     } else {
         return (
             <div className="row coffee-list">
                 {
                     coffee.map((item) => {
                         return (
-                          <CoffeeListItem key={item.id} coffee={item} /> 
+                          <CoffeeListItem 
+                          key={item.id} coffee={item} 
+                          onAddedToCart={() => {
+                              onAddedToCart(item.id)
+                          }} /> 
                         );
                     })
                 }
@@ -45,7 +49,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
         fetchCoffee: () => {
             coffeeService.getCoffee()
             .then(data => dispatch(coffeeLoaded(data)));
-        }
+        },
+        onAddedToCart: (id) => dispatch(coffeeAddedToCart(id))
     }
 }
 
