@@ -28,5 +28,12 @@
         color: #fff;
         background-color: #000;
     }
-    
+    &--manage {
+        max-width: 4rem;
+        padding: 1rem;
+    }
+    &--remove {
+        max-width: 4rem;
+        padding: 1rem;
+    }
 }
