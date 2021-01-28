@@ -22,23 +22,23 @@ const Header = () => {
             
             <nav className="nav" role="navigation">
                 <ul className="topmenu">
-                    <li><a href="/#">Главная</a></li>
-                    <li><a href="/#" className="submenu-link">Кофе</a>
+                    <li><p href="/#">Главная</p></li>
+                    <li><p href="/#" className="submenu-link">Кофе</p>
                         <ul className="submenu">
-                            <li><a href="/#">Mikale</a></li>
-                            <li><a href="/#">Pauling</a></li>
-                            <li><a href="/#">Lavazza</a></li>
+                            <li><p href="/#">Mikale</p></li>
+                            <li><p href="/#">Pauling</p></li>
+                            <li><p href="/#">Lavazza</p></li>
                         </ul>
                     </li>
-                    <li><a href="/#" className="submenu-link">Чай</a>
+                    <li><p href="/#" className="submenu-link">Чай</p>
                         <ul className="submenu">
-                            <li><a href="/#">Bigelow</a></li>
-                            <li><a href="/#">Lipton</a></li>
-                            <li><a href="/#">Dilmah</a></li>
+                            <li><p href="/#">Bigelow</p></li>
+                            <li><p href="/#">Lipton</p></li>
+                            <li><p href="/#">Dilmah</p></li>
                         </ul>
                     </li>
-                    <li><a href="/#">Доставка</a></li>
-                    <li><a href="/#">Контакты</a></li>
+                    <li><p href="/#">Доставка</p></li>
+                    <li><p href="/#">Контакты</p></li>
                 </ul>
             </nav>
         </div>

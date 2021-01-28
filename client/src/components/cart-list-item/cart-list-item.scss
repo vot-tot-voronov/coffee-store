@@ -1,15 +1,29 @@
+@import '../sass/abstracts/mixins.scss';
 .cart-item {
     margin-bottom: 3rem;
+    padding: 0 3rem;
+    @include respond(tab-land) {
+        padding: 0 2rem
+    }
     &__img {
         img {
-            width: 70%;
-            height: 18rem;
+            width: 100%;
+            height: 19rem;
+            @include respond(tab-land) {
+                height: 17rem;
+            }
+            @include respond(phone) {
+                height: 13rem;
+            }
         }
     }
     &__manage {
         &--counter {
             display: inline-block;
             font-size: 1.8rem;
+            @include respond(phone) {
+                display: block;
+            }
         }
     }
     &--line-height {

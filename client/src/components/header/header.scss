@@ -2,6 +2,11 @@
 
 .header {
     margin-top: 6rem;
+    max-width: 130rem;
+    width: 100%;
+    @include respond(phone) {
+        margin-top: 1rem;
+    }
     .title {
         font-size: 6rem;
     }
@@ -15,6 +20,10 @@
         margin: 0 auto;
         padding-top: 4rem;
         padding-bottom: 3rem;
+        @include respond(phone) {
+            padding-top: 1rem;
+            padding-bottom: 0;
+        }
         ul {
             list-style: none;
             margin: 0;
@@ -23,7 +32,7 @@
         .topmenu {
             text-align: center;
             @include clearfix;
-            & a {
+            & p {
                 display: block;
                 text-decoration: none;
                 outline: none;  
@@ -31,11 +40,15 @@
             }
             & > li {
                 float: left;
+                @include respond(phone) {
+                    float: none;
+                }
                 position: relative;
 
-                & > a {
+                & > p {
                     text-transform: uppercase;
                     font-size: 2rem;
+            
                     font-weight: bold;
                     color: #404040;
                     padding: 1.5rem 3rem;
@@ -65,7 +78,7 @@
                 transition: .5s ease-in-out;
                 border-radius: .5rem;
                 
-                & a {
+                & p {
                     color: white;
                     text-align: left;
                     padding: 2rem 1.5rem;

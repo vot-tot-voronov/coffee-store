@@ -17,6 +17,10 @@
         cursor: pointer;
         max-width: 24rem;
         width: 100%;
+        @include respond(phone) {
+            font-size: 2.5rem;
+            max-width: 36rem;
+        }
     }
 
     &:active,

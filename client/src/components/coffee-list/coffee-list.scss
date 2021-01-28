@@ -1,0 +1,9 @@
+@import '../sass/abstracts/mixins.scss';
+
+.coffee-list {
+    padding: 0 3rem;
+    @include respond(tab-land) {
+        padding: 0 2rem
+    }
+    
+}
