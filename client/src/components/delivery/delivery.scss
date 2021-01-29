@@ -1,0 +1,25 @@
+@import '../sass/abstracts/mixins.scss';
+.delivery {
+    max-width: 130rem;
+    width: 100%;
+    padding: 0 3rem;
+    margin: 0 auto;
+    @include respond(phone) {
+        padding: 0 1rem;
+        margin-top: 1rem;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 5rem;
+        font-size: 2.4rem;
+    }
+    &__descr {
+        text-indent: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.01rem;
+        margin-top: 1rem;
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+    }
+}

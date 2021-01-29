@@ -13,32 +13,31 @@ const Header = () => {
                 </div>
                 <div className="col-1-of-2">
                     <div className="nav-box" role="search">
-                        <i className="fas fa-search"></i>
-                        <i className="fab fa-gratipay"></i>
-                        <Link to='/cart'><i className="fas fa-cart-arrow-down"></i></Link>
+                        <i className="nav-box--cart fas fa-search"></i>
+                        <i className="nav-box--cart fab fa-gratipay"></i>
+                        <Link to='/cart' className="nav-box--cart"><i className="fas fa-cart-arrow-down"></i></Link>
                     </div>
                 </div>
             </div>
-            
             <nav className="nav" role="navigation">
                 <ul className="topmenu">
-                    <li><p href="/#">Главная</p></li>
-                    <li><p href="/#" className="submenu-link">Кофе</p>
+                    <li><Link to='/'>Главная</Link></li>
+                    <li><p className="submenu-link">Кофе</p>
                         <ul className="submenu">
-                            <li><p href="/#">Mikale</p></li>
-                            <li><p href="/#">Pauling</p></li>
-                            <li><p href="/#">Lavazza</p></li>
+                            <li><Link to='/'>Mikale</Link></li>
+                            <li><a href="/#">Pauling</a></li>
+                            <li><a href="/#">Lavazza</a></li>
                         </ul>
                     </li>
-                    <li><p href="/#" className="submenu-link">Чай</p>
+                    <li><p className="submenu-link">Чай</p>
                         <ul className="submenu">
-                            <li><p href="/#">Bigelow</p></li>
-                            <li><p href="/#">Lipton</p></li>
-                            <li><p href="/#">Dilmah</p></li>
+                            <li><a href="/#">Bigelow</a></li>
+                            <li><a href="/#">Lipton</a></li>
+                            <li><a href="/#">Dilmah</a></li>
                         </ul>
                     </li>
-                    <li><p href="/#">Доставка</p></li>
-                    <li><p href="/#">Контакты</p></li>
+                    <li><Link to='/delivery'>Доставка</Link></li>
+                    <li><a href="/#">Контакты</a></li>
                 </ul>
             </nav>
         </div>

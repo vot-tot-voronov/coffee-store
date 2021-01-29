@@ -2,7 +2,6 @@
 
 .header {
     margin-top: 6rem;
-    
     max-width: 130rem;
     width: 100%;
     padding: 0 3rem;
@@ -10,10 +9,16 @@
         padding: 0 1rem;
         margin-top: 1rem;
     }
-    
     margin-left: auto;
     margin-right: auto;
-    
+    .nav-box {
+        &--cart {
+            transition: all 0.1s ease-in;
+            &:hover {
+                color: rgb(100, 98, 98);
+            }
+        }
+    }
     .title {
         font-size: 6rem;
     }
@@ -35,11 +40,12 @@
             list-style: none;
             margin: 0;
             padding: 0;
+            cursor: pointer;
         }
         .topmenu {
             text-align: center;
             @include clearfix;
-            & p {
+            & a, p {
                 display: block;
                 text-decoration: none;
                 outline: none;  
@@ -52,7 +58,7 @@
                 }
                 position: relative;
 
-                & > p {
+                & > a, p {
                     text-transform: uppercase;
                     font-size: 2rem;
             
@@ -85,7 +91,7 @@
                 transition: .5s ease-in-out;
                 border-radius: .5rem;
                 
-                & p {
+                & a, p {
                     color: white;
                     text-align: left;
                     padding: 2rem 1.5rem;
