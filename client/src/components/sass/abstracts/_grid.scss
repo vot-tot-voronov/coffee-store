@@ -15,10 +15,6 @@
 
     .col-1-of-2 {
         width: calc(100% / 2);
-        padding: 0 3rem;
-        @include respond(phone) {
-            padding: 0 1rem;
-        }
     }
 
     .col-1-of-3 {
