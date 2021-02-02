@@ -1,6 +1,7 @@
 // work with server
 
 export default class CoffeeService {
+    // Test data
     data = [
         {
             id: 1,
@@ -103,6 +104,7 @@ export default class CoffeeService {
 
         return fetch('http://localhost:5000/api/coffee').then(data => data.json());
 
+        // loacal data, without a fetch request
         // return new Promise((resolve, reject) => {
         //     resolve(this.data);
         // });

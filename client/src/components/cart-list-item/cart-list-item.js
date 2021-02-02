@@ -8,7 +8,7 @@ const CartListItem = ({cartItem, onIncrease, onDecrease, onDelete}) => {
         <div className="row cart-item">
             <div className="col-1-of-6">
                 <div className="cart-item__img">
-                    <img src={img} alt="Cart item pic"/>
+                    <img src={`http://localhost:5000/${img}`} alt="Cart item pic"/>
                 </div>
             </div>
             <div className="col-1-of-6">

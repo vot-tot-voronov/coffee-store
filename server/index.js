@@ -16,7 +16,7 @@ app.use(express.static(path.resolve(__dirname, 'static')))
 app.use('/api', router)
 
 app.get('/', (req, res) => {
-    res.status(200).json({message: 'working'})
+    res.status(200).json({message: 'The server is working'})
 })
 
 const start = async () => {
@@ -28,7 +28,6 @@ const start = async () => {
         console.log(e)
     }
 }
-
 
 start()
 
