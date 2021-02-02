@@ -8,7 +8,7 @@ const CoffeeListItem = ({ coffee, onAddedToCart }) => {
     return (
         <div className="col-1-of-3 coffee-list-item">
             <div className="cover-img">
-                <img src={img} alt="Cover pic"/>
+                <img src={`http://localhost:5000/${img}`} alt="Cover pic"/>
             </div>
             <div className="description">
                 <p className="description__cook-method">{cookMethod}</p>

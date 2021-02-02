@@ -101,10 +101,10 @@ export default class CoffeeService {
     ];
     getCoffee () {
 
-        // return fetch('http://localhost:3001').then(data => data.json());
+        return fetch('http://localhost:5000/api/coffee').then(data => data.json());
 
-        return new Promise((resolve, reject) => {
-            resolve(this.data);
-        });
+        // return new Promise((resolve, reject) => {
+        //     resolve(this.data);
+        // });
     }
 }
